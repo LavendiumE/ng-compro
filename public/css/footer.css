@@ -1,0 +1,34 @@
+/* Footer Section */
+footer {
+    background-color: #0f1d4d;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .row {
+    padding: 2% 5%;
+    height: 120px;
+}
+
+footer .row .logo-footer {
+    height: 100px;
+    width: 100px;
+}
+
+footer .row .copyright {
+    color: whitesmoke;
+    padding-left: -10%;
+}
+
+footer  a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+

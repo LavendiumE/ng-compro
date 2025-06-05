@@ -1,0 +1,109 @@
+body {
+    padding: 0;
+}
+
+/*Header*/
+
+.header {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.header h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+
+/* Tabs */
+.category-tabs {
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+}
+
+
+.tab-btn {
+    flex: 1;
+    padding: 12px 0;
+    border: none;
+    background-color: white;
+    width: 24.75%;
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 0.25px solid lightgray; /* Garis pemisah */
+    transition: 0.3s;
+}
+
+.tab-btn:hover, .tab-btn.active {
+    background-color: #f0f0f0; /* Efek hover */
+    border-bottom: 3px solid #ff3131; /* Warna garis aktif */
+}
+
+.portofolio-container {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+
+.portofolio-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.grid-sizer,
+.portofolio-item {
+    width: calc(33% - 5px);
+    float: left;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.btn {
+    background-color: black;
+    color: white;
+    border-radius: 18px;
+
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        margin-top: 20px;
+    }
+    .header h3{
+        font-size: 32px;
+    }
+    .portofolio-item,
+    .grid-sizer {
+    width: 49%;
+    margin: 0.5%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .portofolio-item,
+    .grid-sizer {
+        width: 100%;
+        margin: 0 0 20px 0;
+        float: none;
+    }
+    
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+}

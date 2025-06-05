@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+/* Hero Section */
+.hero {
+    padding: 3% 2%;
+}
+
+.hero-word {
+    padding: 0 5%;
+    margin-bottom: 2rem;
+}
+.hero-word h1{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.hero-word p{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: black;
+}
+
+@media  (max-width: 768px) {
+    .hero-word h1 {
+        font-size: 28px;
+    }
+    .hero-word p{
+        font-size: 13px;
+    }
+    .image-slide {
+        padding-left: 4%;
+    }
+}
+.image-slide {
+    padding-top: 3%;
+    padding-left: 2%;
+}
+
+.image-slide .col-12 .card {
+    border-radius: 12px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.image-slide .col-12  .card:hover {
+    transform: scale(0.95);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.image-slide .col-12  .card img{
+    border-radius: 12px;
+}
+
+.image-slide .col-12  .card .card-img-overlay {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.142);
+    border-radius: 12px;
+}
+
+.image-slide .col-12  .card .card-img-overlay h5, .card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-family: 'poppins';
+    
+}
+
+.image-slide .col-12  .card .card-img-overlay h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+
+.image-slide .col-12  .card .card-img-overlay p {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+    .image-slide .col-12  .card .card-img-overlay h5 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    }
+
+    .image-slide .col-12  .card .card-img-overlay p {
+    font-size: 12px;
+    font-weight: lighter;
+    }
+    
+}
+
+
+/* About Section */
+.about {
+    background-color: #0f1d4d;
+    /*min-height: 270px;*/
+    padding: 2% 5%;
+}
+
+.about .title {
+    text-align: center; /* Pastikan elemen title tetap di tengah */
+    position: relative;
+    display: inline-block; /* Agar bisa diberi garis bawah */
+}
+
+.about .title h3 {
+    color: #ff3131;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-bottom: 3px solid #ff3131;
+    padding-bottom: 5px;
+}
+
+/*.about .title::after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color: #ff3131;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}*/
+
+
+.about .sub-h3 {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    text-shadow: 1px 1px 5px rgb (0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2%;
+}
+
+.about .about-text {
+    color: #e0e0e0;
+    padding-top: 1%;
+    padding-right: 3%;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    text-shadow: 1px 1px 5px rgb (0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .ul-about {
+    padding-top: 3%;
+}
+
+.about .ul-about li {
+    list-style: none;
+    color: #e0e0e0;
+    padding-top: 3%;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 600px;
+    text-shadow: 1px 1px 5px rgb (0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .ul-about i {
+    font-size: 20px;
+    color: #ff3131;
+}
+
+@media (max-width:768px) {
+    .about {
+    padding: 5% 7%;
+  }
+
+  .about .title {
+    text-align: left;
+    width: 100%;
+  }
+
+  .about .ul-about {
+    padding-left: 0;
+  }
+
+  .about .ul-about li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* Service Section */
+.service {
+    padding: 2% 6% 60px;
+    background-color: white;
+    /*height: 800px;*/
+}
+
+.service .title {
+    text-align: center; /* Pastikan elemen title tetap di tengah */
+    position: relative;
+    display: inline-block; /* Agar bisa diberi garis bawah */
+}
+
+.service .title h3 {
+    color: #ff3131;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service .title h3::after {
+    content: "";
+    width: 95px;
+    height: 3px;
+    background-color: #ff3131;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.container-service .row {
+    margin-bottom: 0px;
+    padding-top: 2%;
+}
+
+.custom-card {
+    width: 400px;
+    height: 350px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card .text-card{
+    margin: 5%;
+}
+
+.custom-card i {
+    font-size: 35px;
+    color: #ff3131;
+    padding-bottom: 7%;
+}
+
+@media (max-width: 768px) {
+    .service{
+        height: 1200px;
+    }
+
+    .custom-card {
+    margin: 0 auto; /* Biar rata tengah */
+     }
+
+   .text-card {
+    font-size: 14px;
+     }
+}
+
+
+/* Client Section */
+.clients {
+    padding: 0% 5%;
+}
+
+.clients .title {
+    text-align: center; /* Pastikan elemen title tetap di tengah */
+    position: relative;
+    display: inline-block; 
+}
+
+.clients .title h3{
+    color: #ff3131;
+    font-size: 28px;
+    font-weight: 650;
+    margin-bottom: 10px;
+}
+
+.clients .title h3::after {
+    content: "";
+    width: 125px;
+    height: 3px;
+    background-color: #ff3131;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.clients .container-clients {
+    padding: 2% 0 ;
+}
+
+.client-box {
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px; /* bisa diatur lagi */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* opsional untuk efek clean */
+}
+
+
+.clients .container-clients .clients-wrap {
+    border-top: 2px color(black);
+    border-left: 1px color(black);
+}
+  
+.clients .client-logo {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px color (black);
+    border-bottom: 1px color (black);
+    overflow: hidden;
+}
+  
+.clients .client-logo img {
+    padding: 50px;
+    max-width: 80%;
+    transition: 0.3s;
+}
+  
+@media (max-width: 640px) {
+    .clients .client-logo img {
+      padding: 30px;
+      max-width: 50%;
+    }
+}
+  
+.clients .client-logo:hover img {
+    transform: scale(1.1);
+}
+
+/* portofolio section */
+.portofolio {
+    padding: 2% 6%;
+    background-color: #f5f5f5;
+    height: 1250px;
+}
+
+.portofolio .title {
+    text-align: center; /* Pastikan elemen title tetap di tengah */
+    position: relative;
+    display: inline-block; /* Agar bisa diberi garis bawah */
+}
+
+.portofolio .title h3 {
+    color: #ff3131;
+    font-size: 28px;
+    font-weight: 650;
+    margin-bottom: 10px;
+}
+
+.portofolio .title h3::after {
+    content: "";
+    width: 95px;
+    height: 3px;
+    background-color: #ff3131;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.portfolio-container {
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    padding: 10px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.02);
+}
+
+/* Contact Section */
+.contact {
+    background-color: white;
+    height: auto;
+}
+
+.contact .container-contact {
+    padding: 3% 5%;
+    background-color: white;
+}
+
+.col-contact {
+    width: 95%;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.contact .title {
+    margin-bottom: 3%;
+}
+
+.contact .title h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.contact .card-contact .mb-3{
+    margin: 2% 5%;   
+}
+
+iframe {
+    width: 650px;
+    height: 500px;
+    border-radius: 12px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border-radius: 18px;
+
+}

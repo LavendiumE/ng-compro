@@ -1,0 +1,75 @@
+.brand {
+    padding: 5% 5%;
+}
+.header {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.header h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    max-height: 70%;
+    max-width: 70%;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    max-width: 150px; /* Biar nggak kegedean */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.card h5 {
+    font-size: 16px;
+    text-align: center;
+}
+.card {
+    padding: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .my-5 {
+      grid-template-columns: repeat(2, 1fr); /* 2 kolom pas layar kecil */
+    }
+  
+    .swiper-slide img {
+      max-width: 85%; /* Logo brand makin kecil di mobile */
+      max-height: 85%;
+    }
+  
+    .product-card img {
+      max-width: 140px;
+    }
+    .header {
+        margin-top: 20px;
+    }
+    .header h3{
+        font-size: 32px;
+    }
+  }
