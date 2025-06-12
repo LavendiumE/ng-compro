@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
         
         <!-- Isotope.js -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -38,11 +39,11 @@
     </head>
     <body>
         <?= view('layout/navbar') ?>
-        <div class="header">
+        <div class="header" data-aos="fade-up" data-aos-delay="100">
             <h3>Product & Brands</h3>
         </div>
 
-        <section class="brand">
+        <section class="brand" data-aos="fade-up" data-aos-delay="200">
             <div class="swiper brandSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -81,7 +82,7 @@
 
         <div class="container my-5">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-6 mb-4">
+                <div class="col-lg-4 col-md-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card">
                         <img src="assets/img/product/1.png">
                         <div class="card-body">
@@ -90,7 +91,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-6 mb-4">
+                <div class="col-lg-4 col-md-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card">
                         <img src="assets/img/product/2.png">
                         <div class="card-body">
@@ -99,7 +100,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-6 mb-4">
+                <div class="col-lg-4 col-md-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="card">
                         <img src="assets/img/product/3.png">
                         <div class="card-body">
@@ -108,7 +109,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-6 mb-4">
+                <div class="col-lg-4 col-md-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card">
                         <img src="assets/img/product/4.png">
                         <div class="card-body">
@@ -117,7 +118,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-6 mb-4">
+                <div class="col-lg-4 col-md-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card">
                         <img src="assets/img/product/5.png">
                         <div class="card-body">
@@ -126,7 +127,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-6 mb-4">
+                <div class="col-lg-4 col-md-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="card">
                         <img src="assets/img/product/6.png">
                         <div class="card-body">
@@ -140,5 +141,12 @@
         
 
         <?= view('layout/footer') ?>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            once: true, // supaya animasi hanya muncul 1x
+            duration: 800, // durasi animasi dalam ms
+        });
+        </script>
     </body>
 </html>

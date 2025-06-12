@@ -14,7 +14,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-        
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
         <!-- Isotope.js -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
@@ -38,14 +39,14 @@
             <h3>Portofolio</h3>
         </div>
 
-        <div class="category-tabs">
+        <div class="category-tabs" data-aos="fade-up" data-aos-delay="100">
             <button class="tab-btn active filter-button" data-filter="*">All</button>
             <button class="tab-btn filter-button" data-filter=".electric">Electric</button>
             <button class="tab-btn filter-button" data-filter=".mechanic">Mechanic</button>
             <button class="tab-btn filter-button" data-filter=".marine">Marine</button>
         </div>
 
-        <div class="container my-5">
+        <div class="container my-5" data-aos="fade-up" data-aos-delay="200">
             <div class="row portofolio-container grid">
                 <div class="grid-sizer col-lg-4 col-md-6 col-12 mb-4 portofolio-item electric">
                     <div class="card">
@@ -97,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--
                 <div class="grid-sizer col-lg-4 col-md-6 col-12 mb-4 portofolio-item electric">
                     <div class="card">
                         <img src="assets/img/sumu rubber/sumi1.jpg" class="card-img-top img-fluid" alt="electric">
@@ -114,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-
+-->
                 <div class="grid-sizer col-lg-4 col-md-6 col-12 mb-4 portofolio-item electric">
                     <div class="card">
                         <img src="assets/img/plts nule/nule1.jpg" class="card-img-top img-fluid" alt="electric">
@@ -132,6 +133,7 @@
                     </div>
                 </div>
 
+                <!--
                 <div class="grid-sizer col-lg-4 col-md-6 col-12 mb-4 portofolio-item electric">
                     <div class="card">
                         <img src="assets/img/world music industry/music1.jpg" class="card-img-top img-fluid" alt="electric">
@@ -148,6 +150,7 @@
                         </div>
                     </div>
                 </div>
+-->
 
                 <div class="grid-sizer col-lg-4 col-md-6 col-12 mb-4 portofolio-item electric">
                     <div class="card">
@@ -200,6 +203,7 @@
                     </div>
                 </div>
 
+                <!--
                 <div class="grid-sizer col-lg-4 col-md-6 col-12 mb-4 portofolio-item electric">
                     <div class="card">
                         <img src="assets/img/pwkwi plc/pwkwi1.jpg" class="card-img-top img-fluid" alt="electric">
@@ -216,7 +220,8 @@
                         </div>
                     </div>
                 </div>
-
+-->
+                
                 <div class="grid-sizer col-lg-4 col-md-6 col-12 mb-4 portofolio-item mechanic">
                     <div class="card">
                         <img src="assets/img/pwkwi joint machine/joint1.jpg" class="card-img-top img-fluid" alt="Mechanic">
@@ -317,5 +322,12 @@
 
         
         <?= view('layout/footer') ?>
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+        <script>
+        AOS.init({
+            once: true, // supaya animasi hanya muncul 1x
+            duration: 800, // durasi animasi dalam ms
+        });
+        </script>
     </body>
 </html>

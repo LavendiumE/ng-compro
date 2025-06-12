@@ -31,15 +31,35 @@ nav .logo {
     cursor: pointer;
 }
 
-.nav-links ul li a{
+/*.nav-links ul li a{
     text-decoration: none;
     color: black;
     font-size: 16px;
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
+}*/
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
-.nav-links ul .ncta::after {
+.nav-links ul .ncta a:hover,
+.nav-links ul .ncta a.active {
+  background-color: rgba(0, 51, 102, 0.1); /* soft navy */
+  color: #003366; /* navy industrial */
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+
+/*.nav-links ul .ncta::after {
    content: '';
    width: 0%;
    height: 1px;
@@ -59,6 +79,12 @@ nav .logo {
     width: 100%;
 }
 
+.nav-links ul li a.active {
+  color: rgb(85, 85, 86); /* Warna aktif 
+  font-weight: 600;
+  border-bottom: 1px solid rgb(85, 85, 86);
+}
+*/
 .nav-links ul li .cta {
     background: #ff3131;
     color: #15296b;
@@ -69,9 +95,12 @@ nav .logo {
     transition: 0.3s;
 }
 
-.nav-links ul li .cta:hover {
-    background: rgb(141, 141, 143);
-    color: black;
+.nav-links ul li .cta:hover,
+.nav-links ul li .cta.active {
+    background-color: rgba(0, 51, 102, 0.1); /* soft navy */
+    color: #003366; /* navy industrial */
+    font-weight: 600;
+    border-radius: 20px;
 }
 
 /* Default: hidden burger icon */

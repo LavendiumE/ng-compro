@@ -459,8 +459,17 @@ iframe {
 }
 
 .btn {
-    background-color: black;
-    color: white;
-    border-radius: 18px;
+  background-color: #ff3131;
+  color: #15296b;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
 
+.btn:hover {
+    background-color: rgba(0, 51, 102, 0.1); /* soft navy */
+    color: #003366; /* navy industrial */
+    font-weight: 600;
 }
