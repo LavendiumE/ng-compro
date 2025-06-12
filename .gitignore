@@ -1,6 +1,4 @@
 /vendor/
-/writable/
-.env
 *.log
 *.cache
 .idea/
