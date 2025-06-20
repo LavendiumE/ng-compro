@@ -25,8 +25,9 @@
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-
-    <title>NGS</title>
+    <!-- Favicon -->
+    <link rel="icon" href="<?= base_url('assets/favicon.png') ?>" type="image/x-icon">
+    <title>Home</title>
   </head>
   <body>
     <?= view('layout/navbar') ?>
