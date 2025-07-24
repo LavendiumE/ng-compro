@@ -18,6 +18,14 @@ nav .logo {
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px){
+    nav .logo {
+    width: 280px;
+    height: 52px;
+    cursor: pointer;
+}
+}
+
 .nav-links {
     flex: 1;
     text-align: right;
@@ -110,6 +118,7 @@ nav .logo {
 
 /* Responsive rules */
 @media screen and (max-width: 1200px) {
+
     .nav-links .navmenu {
         display: none;
         flex-direction: column;

@@ -288,14 +288,21 @@ html {
      }
 
    .text-card {
-    font-size: 14px;
+    font-size: 12px;
      }
+
+    .custom-card i {
+    font-size: 24px;
+    color: #ff3131;
+    padding-bottom: 7%;
+    }
 }
 
 
 /* Client Section */
 .clients {
     padding: 0% 5%;
+    padding-top: 50px;
 }
 
 .clients .title {
@@ -362,8 +369,8 @@ html {
   
 @media (max-width: 640px) {
     .clients .client-logo img {
-      padding: 30px;
-      max-width: 50%;
+      padding: 20px;
+      max-width: 80%;
     }
 }
   

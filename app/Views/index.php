@@ -202,73 +202,73 @@
 
       <div class="container-clients" >
         <div class="row g-0 clients-wrap">
-          <div data-aos="fade-up" data-aos-delay="100" class="col-12 col-sm-6 col-lg-3 client-logo">
+          <div data-aos="fade-up" data-aos-delay="100" class="col-6 col-md-3 client-logo">
             <div class="client-box">
               <img src="assets/img/client1.png" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
-          <div data-aos="fade-up" data-aos-delay="150" class="col-12 col-sm-6 col-lg-3 client-logo">
+          <div data-aos="fade-up" data-aos-delay="150" class="col-6 col-md-3 client-logo">
             <div class="client-box">
               <img src="assets/img/client2.png" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
-          <div data-aos="fade-up" data-aos-delay="200" class="col-12 col-sm-6 col-lg-3 client-logo">
+          <div data-aos="fade-up" data-aos-delay="200" class="col-6 col-md-3 client-logo">
             <div class="client-box">
               <img src="assets/img/client3.png" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
-          <div data-aos="fade-up" data-aos-delay="250" class="col-12 col-sm-6 col-lg-3 client-logo">
+          <div data-aos="fade-up" data-aos-delay="250" class="col-6 col-md-3 client-logo">
             <div class="client-box">
               <img src="assets/img/client4.png" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
-          <div data-aos="fade-up" data-aos-delay="300" class="col-12 col-sm-6 col-lg-3 client-logo">
+          <div data-aos="fade-up" data-aos-delay="300" class="col-6 col-md-3 client-logo">
             <div class="client-box">
               <img src="assets/img/client5.png" class="img-fluid" alt="">
             </div> 
           </div><!-- End Client Item -->
 
-          <div data-aos="fade-up" data-aos-delay="350" class="col-12 col-sm-6 col-lg-3 client-logo">
+          <div data-aos="fade-up" data-aos-delay="350" class="col-6 col-md-3 client-logo">
             <div class="client-box">
               <img src="assets/img/client6.png" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
-          <div data-aos="fade-up" data-aos-delay="400" class="col-12 col-sm-6 col-lg-3 client-logo">
+          <div data-aos="fade-up" data-aos-delay="400" class="col-6 col-md-3 client-logo">
             <div class="client-box">
               <img src="assets/img/client7.png" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
-          <div data-aos="fade-up" data-aos-delay="450" class="col-12 col-sm-6 col-lg-3 client-logo">
+          <div data-aos="fade-up" data-aos-delay="450" class="col-6 col-md-3 client-logo">
             <div class="client-box">
               <img src="assets/img/client8.png" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
-          <div data-aos="fade-up" data-aos-delay="500" class="col-12 col-sm-6 col-lg-3 client-logo">
+          <div data-aos="fade-up" data-aos-delay="500" class="col-6 col-md-3 client-logo">
             <div class="client-box">
               <img src="assets/img/client9.png" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
-          <div data-aos="fade-up" data-aos-delay="550" class="col-12 col-sm-6 col-lg-3 client-logo">
+          <div data-aos="fade-up" data-aos-delay="550" class="col-6 col-md-3 client-logo">
             <div class="client-box">
               <img src="assets/img/client10.png" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
-          <div data-aos="fade-up" data-aos-delay="600" class="col-12 col-sm-6 col-lg-3 client-logo">
+          <div data-aos="fade-up" data-aos-delay="600" class="col-6 col-md-3 client-logo">
             <div class="client-box">
                <img src="assets/img/client11.png" class="img-fluid" alt="">
             </div>
           </div><!-- End Client Item -->
 
-          <div data-aos="fade-up" data-aos-delay="650" class="col-12 col-sm-6 col-lg-3 client-logo">
+          <div data-aos="fade-up" data-aos-delay="650" class="col-6 col-md-3 client-logo">
             <div class="client-box">
               <img src="assets/img/client12.png" class="img-fluid" alt="">
             </div>
