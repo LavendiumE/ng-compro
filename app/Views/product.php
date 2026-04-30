@@ -42,6 +42,7 @@
         <?= view('layout/navbar') ?>
         <div class="header" data-aos="fade-up" data-aos-delay="100">
             <h3>Product & Brands</h3>
+            <p>Trusted industrial components from leading automation and electrical brands.</p>
         </div>
 
         <section class="brand" data-aos="fade-up" data-aos-delay="200">
@@ -81,13 +82,14 @@
             </div>
         </section>
 
+        <p class="section-label">Available Product Categories</p>
         <div class="container my-5">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card">
                         <img src="assets/img/product/1.png">
                         <div class="card-body">
-                            <h5>PLC (Programable Logic Controller)</h5>
+                            <h5>PLC (Programmable Logic Controller)</h5>
                         </div>
                     </div>
                 </div>

@@ -180,7 +180,7 @@
                             class="btn btn-primary view-more-btn"
                             data-title="Patal Senayan Jakarta"
                             data-description="Pengadaan dan Pemasangan Panel Office "
-                            data-images="assets/img/patal senayan/senayan1.jpg,assets/img/patal senayan/senayan2.jpg,assets/img/patal senayan/senayan3.jpg,assets/img/patal senayan/senayan4.jp"
+                            data-images="assets/img/patal senayan/senayan1.jpg,assets/img/patal senayan/senayan2.jpg,assets/img/patal senayan/senayan3.jpg,assets/img/patal senayan/senayan4.jpg"
                             data-bs-toggle="modal"
                             data-bs-target="#projectModal">View more</button>
                         </div>

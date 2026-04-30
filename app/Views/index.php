@@ -27,100 +27,127 @@
 
     <!-- Favicon -->
     <link rel="icon" href="<?= base_url('assets/favicon.png') ?>" type="image/x-icon">
-    <title>Home</title>
+    <title>Industrial Electrical & Automation Services | PT Nita Gemilang Solusindo</title>
+
+    <meta name="description" content="Industrial electrical contractor providing automation systems, control panel fabrication, electrical installation, and industrial maintenance services in Indonesia.">
+    <meta name="keywords" content="industrial electrical, automation system, control panel fabrication, electrical contractor, PLC automation, industrial maintenance">
+    <meta name="author" content="PT Nita Gemilang Solusindo">
   </head>
   <body>
     <?= view('layout/navbar') ?>
     <!--- Hero Section --->
     <section class="hero">
-      <div class="hero-word">
-        <h1  data-aos="fade-up" data-aos-delay="100">Empowering Industries with Reliable Electric,<br> Mechanic, and Automation Solutions</h1>
-        <p class="hero-p"  data-aos="fade-up" data-aos-delay="200">With experience and strong commitment, we provide top-quality solutions in<br> electric, mechanic, and automation, ensuring reliability and <br>customer satisfaction in every service we deliver</p>
-      </div>  
+      <div class="container">
+        <div class="row align-items-center hero-wrapper">
 
-      <div class="image-slide">
-        <div class="container">
+          <div class="col-lg-6">
+            <div class="hero-word">
+              <h1 data-aos="fade-up">
+                Reliable Industrial Electrical & Automation Solutions
+              </h1>
 
-        <div class="row">
+              <p class="hero-p" data-aos="fade-up" data-aos-delay="150">
+                Supporting industrial operations through electrical installation,
+                control systems, panel fabrication, and automation services
+                for manufacturing, marine, and infrastructure sectors.
+              </p>
 
-          <div class="col-12 col-md-4 mb-4"  data-aos="fade-up" data-aos-delay="100">
+              <div class="hero-btn" data-aos="fade-up" data-aos-delay="250">
+                <a href="#contact-section" class="btn btn-primary me-2">Request Consultation</a>
+                <a href="#service-section" class="btn btn-outline-secondary">Explore Services</a>
+              </div>
 
-            <div class="card">
-              <img src="assets/img/carousel/img-card1.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Electric</h5>
-                <p class="card-text">Wiring Panel</p>
+              <div class="hero-stats" data-aos="fade-up" data-aos-delay="350">
+                <div>
+                  <h4>10+</h4>
+                  <small>Years Experience</small>
+                </div>
+                <div>
+                  <h4>50+</h4>
+                  <small>Projects Delivered</small>
+                </div>
+                <div>
+                  <h4>20+</h4>
+                  <small>Industrial Clients</small>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-md-4 mb-4"  data-aos="fade-up" data-aos-delay="200">
-
-            <div class="card">
-              <img src="assets/img/carousel/img-card2.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Mechanic</h5>
-                <p class="card-text">Modification Joint Machine</p>
-              </div>
+          <div class="col-lg-6">
+            <div class="hero-grid">
+              <img src="assets/img/carousel/img-card1.jpg" class="hero-img hero-img-1">
+              <img src="assets/img/carousel/img-card2.jpg" class="hero-img hero-img-2">
+              <img src="assets/img/carousel/img-card3.jpg" class="hero-img hero-img-3">
             </div>
-          </div>
-
-          <div class="col-12 col-md-4 mb-4"  data-aos="fade-up" data-aos-delay="300">
-
-            <div class="card">
-              <img src="assets/img/carousel/img-card3.jpg" class="card-img" alt="...">
-              <div class="card-img-overlay">
-                <h5 class="card-title">Marine</h5>
-                <p class="card-text">Installation Fire Detector</p>
-              </div>
-            </div>
-          </div>
-
-          
-
           </div>
 
         </div>
-        
       </div>
     </section>
     
-    <!-- About Section -->
     <section class="about" id="about-section">
-
       <div class="container">
+        <div class="row align-items-center">
 
-        <div class="row">
+          <div class="col-lg-5">
+            <div class="about-left">
+              <span class="about-label" data-aos="fade-up">About Us</span>
 
-          <div class="col-12 col-md-6" >
-            <div data-aos="fade-up" data-aos-delay="100" class="title">
-              <h3>About Us</h3> 
+              <h2 data-aos="fade-up" data-aos-delay="100">
+                Empowering Industries with Innovation and Excellence
+              </h2>
+
+              <p data-aos="fade-up" data-aos-delay="200">
+                With years of expertise in Electric, Mechanic, and Automation, we deliver cutting-edge solutions to optimize industrial performance. Our commitment is to provide high-quality products and services tailored to our clients' needs.
+              </p>
             </div>
-            <p data-aos="fade-up" data-aos-delay="200" class="sub-h3">Empowering Industries with Innovation and Excellence.</p>
-            <p data-aos="fade-up" data-aos-delay="300" class="about-text">With years of expertise in Electric, Mechanic, and Automation, we deliver cutting-edge solutions to optimize industrial performance. Our commitment is to provide high-quality products and services tailored to our clients' needs.</p>
           </div>
 
-          <div class="col-12 col-md-6">
-            <ul class="ul-about">
-              <li data-aos="fade-up" data-aos-delay="200"><i class="bi bi-check2-circle"></i> <span>Providing quality services to complete client needs with competitive prices</span></li>
-              <li data-aos="fade-up" data-aos-delay="300"><i class="bi bi-check2-circle"></i> <span>Develop technology with professional human resources</span></li>
-              <li data-aos="fade-up" data-aos-delay="400"><i class="bi bi-check2-circle"></i> <span>Providing benefits to stakeholders with high integrity</span></li>
-            </ul>
+          <div class="col-lg-7">
+            <div class="about-cards">
+
+              <div class="about-card" data-aos="fade-up" data-aos-delay="150">
+                <i class="bi bi-check2-circle"></i>
+                <div>
+                  <h5>Quality Service</h5>
+                  <p>Providing quality services to complete client needs with competitive prices.</p>
+                </div>
+              </div>
+
+              <div class="about-card" data-aos="fade-up" data-aos-delay="250">
+                <i class="bi bi-check2-circle"></i>
+                <div>
+                  <h5>Professional Resources</h5>
+                  <p>Developing technology through professional and experienced human resources.</p>
+                </div>
+              </div>
+
+              <div class="about-card" data-aos="fade-up" data-aos-delay="350">
+                <i class="bi bi-check2-circle"></i>
+                <div>
+                  <h5>Integrity Commitment</h5>
+                  <p>Providing long-term value to stakeholders with high integrity.</p>
+                </div>
+              </div>
+
+            </div>
           </div>
 
         </div>
-
       </div>
-
     </section>
 
     <!--Service Section-->
     <section class="service" id="service-section">
 
       <div class="title">
-        <h3>Service</h3>
-        <p class="sub-service"></p>
-      </div>
+        <h3>SERVICE</h3>
+        <h2 class="service-heading">Integrated Industrial Solutions for Your Business</h2>
+        <p class="service-subtext">
+            We deliver practical electrical, automation, and fabrication services designed to improve efficiency, reliability, and long-term operational performance across industries.
+        </p>
+    </div>
 
       <div class="container-service">
 
@@ -192,13 +219,47 @@
 
     </section>
 
-   <!-- Clients Section -->
+    <section class="featured-projects">
+      <div class="container">
+        <div class="title">
+          <h3>Featured Projects</h3>
+          <p>Selected industrial works delivered for various sectors.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="custom-card">
+              <img src="assets/img/porto/electric-1.jpg" class="img-fluid mb-3">
+              <h5>Control Panel Installation</h5>
+              <p>Electrical panel integration for manufacturing facility.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="custom-card">
+              <img src="assets/img/porto/mechanic-1.jpg" class="img-fluid mb-3">
+              <h5>Mechanical Modification</h5>
+              <p>Joint machine adjustment for production efficiency.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="custom-card">
+              <img src="assets/img/porto/marine-1.jpeg" class="img-fluid mb-3">
+              <h5>Marine Detector Installation</h5>
+              <p>Safety system support for marine operation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Clients Section -->
     <section id="clients" class="clients section">
 
-      <div class="title">
-        <h3>Our Client</h3>
-        <p class="sub-service"></p>
-      </div>
+      <h3>Trusted by Industry Leaders</h3>
+      <p class="client-subtitle">Companies that have collaborated with us across industrial sectors.</p>
 
       <div class="container-clients" >
         <div class="row g-0 clients-wrap">
@@ -277,56 +338,20 @@
         </div>
       </div>
     </section>
-    <!--
-    <section class="portofolio">
-      <div class="title">
-        <h3>Portofolio</h3>
-        <p class="sub-service"></p>
-      </div>
 
+    <section class="cta-section text-center">
       <div class="container">
-        <div class="text-center my-3">
-          <button class="btn btn-primary filter-button" data-filter="*">Semua</button>
-          <button class="btn btn-secondary filter-button" data-filter=".mec">Mechanic</button>
-          <button class="btn btn-secondary filter-button" data-filter=".el">Electric</button>
-          <button class="btn btn-secondary filter-button" data-filter=".mar">Marine</button>
-        </div>
-
-        <div class="row portfolio-container">
-          <div class="col-md-4 portfolio-item mec">
-              <img src="assets/img/porto/mechanic-1.jpg" class="img-fluid" alt="Mechanic">
-          </div>
-          <div class="col-md-4 portfolio-item mec">
-              <img src="assets/img/porto/mechanic-2.jpg" class="img-fluid" alt="Mechanic">
-          </div>
-          <div class="col-md-4 portfolio-item mec">
-              <img src="assets/img/porto/mechanic-3.jpg" class="img-fluid" alt="Mechanic">
-          </div>
-          <div class="col-md-4 portfolio-item el">
-              <img src="assets/img/porto/electric-1.jpg" class="img-fluid" alt="Electric">
-          </div>
-          <div class="col-md-4 portfolio-item el">
-              <img src="assets/img/porto/electric-2.jpg" class="img-fluid" alt="Electric">
-          </div>
-          <div class="col-md-4 portfolio-item el">
-              <img src="assets/img/porto/electric-3.jpg" class="img-fluid" alt="Electric">
-          </div>
-          <div class="col-md-4 portfolio-item mar">
-              <img src="assets/img/porto/marine-1.jpeg" class="img-fluid" alt="Marine">
-          </div>
-          <div class="col-md-4 portfolio-item mar">
-              <img src="assets/img/porto/marine-2.jpeg" class="img-fluid" alt="Marine">
-          </div>
-          <div class="col-md-4 portfolio-item mar">
-              <img src="assets/img/porto/marine-3.jpeg" class="img-fluid" alt="Marine">
-          </div>
-        </div>
-        
+        <h3>Discuss Your Industrial Requirement with Our Team</h3>
+        <p>
+          From electrical installation to automation systems,
+          we help industries execute projects with reliable technical support.
+        </p>
+        <a href="#contact-section" class="btn btn-primary">Start Discussion</a>
       </div>
-    </section>-->
+    </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="contact" id="contact-section">
 
       <div class="container-contact">
 
@@ -355,6 +380,15 @@
                   <label for="message" class="form-label">Message</label>
                   <textarea class="form-control" id="message" rows="3" required></textarea>
               </div>
+              <div class="mb-3">
+                <label for="serviceType" class="form-label">Service Needed</label>
+                <select class="form-control" id="serviceType">
+                  <option>Electrical Installation</option>
+                  <option>Automation System</option>
+                  <option>Panel Fabrication</option>
+                  <option>Mechanical Service</option>
+                </select>
+              </div>
               <button data-aos="fade-up" data-aos-delay="250" class="btn btn-primary" type="submit" id="btn-submit">Send Message</button>
             </form>
 
@@ -363,7 +397,10 @@
           </div>
 
           <div data-aos="fade-up" data-aos-delay="100" class="col-md-6 col-12 mb-3">
-
+            <div class="map-title">
+              <h5>Office Location</h5>
+              <p>Purwakarta, West Java</p>
+            </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.733924293863!2d107.44111637486591!3d-6.555236364081726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690e50a4a63b2f%3A0xc59ac10c48554abc!2sPT.%20Nita%20Gemilang%20Solusindo!5e0!3m2!1sen!2sid!4v1742446308282!5m2!1sen!2sid"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
           </div>

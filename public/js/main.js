@@ -1,16 +1,6 @@
 function toggleMenu() {
-  const menu = document.querySelector(".menu");
-  const toggleIcon = document.querySelector(".menu-toggle i");
-  
-  menu.classList.toggle("active");
-  
-  if (menu.classList.contains("active")) {
-      toggleIcon.classList.remove("fa-bars");
-      toggleIcon.classList.add("fa-times");
-  } else {
-      toggleIcon.classList.remove("fa-times");
-      toggleIcon.classList.add("fa-bars");
-  }
+    const navLinks = document.getElementById("navLinks");
+    navLinks.classList.toggle("active");
 }
 
 $(document).ready(function () {

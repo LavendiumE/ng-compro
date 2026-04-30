@@ -1,76 +1,82 @@
 $(document).ready(function () {
-    console.log("Document ready!");
+    console.log("Portfolio ready");
 
-    // Inisialisasi Isotope setelah semua gambar dimuat
-    var $grid = $('.portofolio-container');
+    const $grid = $('.portofolio-container');
 
+    /* INIT ISOTOPE AFTER IMAGE LOAD */
     $grid.imagesLoaded(function () {
         $grid.isotope({
             itemSelector: '.portofolio-item',
             layoutMode: 'masonry',
             percentPosition: true,
             masonry: {
-                columnWidth:'.grid-sizer'
+                columnWidth: '.grid-sizer'
             }
         });
 
-        console.log("Isotope initialized after images loaded!");
-
-        // Menjalankan layout ulang setelah delay untuk memastikan tata letak benar
-        setTimeout(function () {
-            $grid.isotope('layout');
-        }, 500);
-    });
-
-    // Filter berdasarkan kategori saat tombol diklik
-    $('.category-tabs').on('click', '.filter-button', function () {
-        var filterValue = $(this).attr('data-filter');
-
-        console.log("Filter clicked:", filterValue);
-
-        // Pastikan filter menggunakan format yang benar
-        $grid.isotope({ filter: filterValue });
-
-        // Menjalankan layout ulang setelah filter diterapkan
         setTimeout(function () {
             $grid.isotope('layout');
         }, 300);
+    });
 
-        // Ganti kelas 'active' pada tombol
+    /* FILTER BUTTON */
+    $('.category-tabs').on('click', '.filter-button', function () {
+        const filterValue = $(this).attr('data-filter');
+
+        $grid.isotope({
+            filter: filterValue
+        });
+
         $('.filter-button').removeClass('active');
         $(this).addClass('active');
+
+        setTimeout(function () {
+            $grid.isotope('layout');
+        }, 250);
     });
 
-    // Jalankan ulang layout saat jendela di-resize
+    /* RESIZE SAFE */
+    let resizeTimer;
     $(window).on('resize', function () {
-        $grid.isotope('layout');
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function () {
+            $grid.isotope('layout');
+        }, 250);
     });
-});
 
-function myFunction() {
-    console.log("Burger menu clicked!");
-    var x = document.getElementById("navLinks");
-    x.classList.toggle("responsive");
-}
+    /* MODAL VIEW MORE */
+    $('.view-more-btn').on('click', function () {
+        const title = $(this).data('title');
+        const description = $(this).data('description');
+        const images = $(this).data('images').split(',');
 
-$('.view-more-btn').on('click', function () {
-    const title = $(this).data('title');
-    const description = $(this).data('description');
-    const images = $(this).data('images').split(',');
+        $('#projectModalLabel').text(title);
+        $('#modalDescription').text(description);
 
-    $('#projectModalLabel').text(title);
-    $('#modalDescription').text(description);
+        const $carouselInner = $('#modalCarouselInner');
+        $carouselInner.empty();
 
-    const $carouselInner = $('#modalCarouselInner');
-    $carouselInner.empty();
+        images.forEach((imgSrc, index) => {
+            const activeClass = index === 0 ? 'active' : '';
 
-    images.forEach((imgSrc, index) => {
-        const isActive = index === 0 ? 'active' : '';
-        const itemHTML = `
-            <div class="carousel-item ${isActive}">
-                <img src="${imgSrc}" class="d-block w-100" alt="Project image ${index + 1}">
-            </div>
-        `;
-        $carouselInner.append(itemHTML);
+            const item = `
+                <div class="carousel-item ${activeClass}">
+                    <img src="${imgSrc.trim()}" class="d-block w-100" alt="Project image ${index + 1}">
+                </div>
+            `;
+
+            $carouselInner.append(item);
+        });
+
+        /* RESET CAROUSEL TO FIRST SLIDE */
+        const carouselElement = document.querySelector('#projectCarousel');
+        const carousel = bootstrap.Carousel.getOrCreateInstance(carouselElement);
+        carousel.to(0);
     });
+
+    /* MOBILE MENU */
+    window.myFunction = function () {
+        const nav = document.getElementById("navLinks");
+        nav.classList.toggle("responsive");
+    };
 });
